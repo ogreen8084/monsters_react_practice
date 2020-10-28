@@ -25,7 +25,9 @@ class App extends Component {
     const { monsters, searchField} = this.state;
     const filteredMonsters = monsters.filter(monster => monster.name.toLowerCase().includes(searchField.toLowerCase()));
     return (
+
       <div className='App'>
+      <h1>Monsters react</h1>
       <SearchBox
         placeholder='search monsters'
         handleChange = {this.handleChange}
